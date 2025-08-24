@@ -37,7 +37,7 @@ chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64
 driver = webdriver.Chrome(options=chrome_options)
 wait = WebDriverWait(driver, 8)
 
-RATING_SELECTOR = "div.XQDdHH"
+RATING_SELECTOR = "div.DOjaWF div.cPHDOP div.C7fEHH div.ISksQ2 div._5OesEi div.XQDdHH"
 RR_SELECTOR = "span.Wphh3N"
 
 num_re = re.compile(r"\d+(?:\.\d+)?")
@@ -113,3 +113,4 @@ if __name__ == "__main__":
             driver.quit()
         except Exception:
             pass
+
